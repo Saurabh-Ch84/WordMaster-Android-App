@@ -1,50 +1,115 @@
-# Welcome to your Expo app 👋
+#  Word Master
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+> **Challenge yourself, expand your vocabulary, and compete with friends!**
 
-## Get started
+**Word Master** is a comprehensive word game suite built with **React Native** and **Expo**. It features 5 distinct game modes, a real-time cloud leaderboard, and a fully customizable local dictionary manager.
 
-1. Install dependencies
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![Platform](https://img.shields.io/badge/platform-Android%20%7C%20Web-green.svg)
+![Tech](https://img.shields.io/badge/tech-React%20Native%20%7C%20Redux%20%7C%20Firebase-orange.svg)
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+## Download the App
 
-   ```bash
-   npx expo start
-   ```
+Get the latest Android APK from the **Releases** page:
 
-In the output, you'll find options to open the app in a
+👉 **[Download WordMaster v1.0.0](https://github.com/Saurabh-Ch84/WordMaster-Android-App/releases/download/v1.0.0/application-47fdeafb-47e8-4802-8d68-a4b22c413979.apk)**
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Web Version:
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Don't want to install no worries:
 
-## Get a fresh project
+**(https://word-master-app-web-version.vercel.app/)**
 
-When you're ready, run:
+---
 
-```bash
-npm run reset-project
-```
+## Features
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 🕹️ 5 Unique Game Modes
+Each game mode features a distinct color identity and unique mechanics:
+* **🟢 Hangman (Emerald):** The classic guessing game. Save the stickman before it's too late!
+* **🟣 Word Scramble (Violet):** Unjumble the shuffled letters to reconstruct the hidden word.
+* **🔴 Word Rush (Rose):** A race against time! Identify words quickly before the 1-second timer runs out.
+* **🟡 Spell Bee (Amber):** Listen to the word (using Text-to-Speech) and type the correct spelling.
+* **🔵 Word Rain (Sky Blue):** A physics-based challenge. Tap the falling words before they hit the floor!
 
-## Learn more
+### 🏆 Cloud Leaderboard
+* **Real-Time Sync:** Powered by **Firebase Realtime Database**.
+* **Live Rankings:** See your rank update instantly as you play.
+* **Anonymous Login:** No signup required—start playing immediately.
+* **"You" Highlight:** Your score is specially highlighted with a gold border.
 
-To learn more about developing your project with Expo, look at the following resources:
+### ⚙️ Dictionary Manager
+* **Mutate Dictionary:** You are in control! Add new words or delete existing ones from the game's database.
+* **Local Persistence:** Your custom words are saved locally on your device.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### 🎨 Design & Accessibility
+* **Dark/Light Mode:** Full theme support that respects system settings or manual toggle.
+* **Vibrant UI:** Custom "3D Pop" card designs with tactile feedback.
+* **Responsive:** optimized for various screen sizes (Mobile & Web).
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
+## 🛠️ Tech Stack
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+* **Core:** React Native, Expo (Managed Workflow)
+* **Navigation:** Expo Router (File-based routing)
+* **State Management:** Redux Toolkit (Persisted with AsyncStorage)
+* **Backend:** Firebase Realtime Database & Authentication
+* **Audio/Speech:** `expo-av`, `expo-speech`
+* **Deployment:** EAS Build (Expo Application Services)
+
+---
+
+## 🚀 How to Run Locally
+
+If you want to run the code on your own machine:
+
+1.  **Clone the Repository**
+    ```bash
+    git clone https://github.com/Saurabh-Ch84/WordMaster-Android-App.git
+    cd WordMaster
+    ```
+
+2.  **Install Dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Start the App**
+    ```bash
+    npx expo start
+    ```
+    * Press **`a`** to open on Android Emulator (or scan QR code with Expo Go).
+    * Press **`w`** to open the Web version in your browser.
+
+---
+
+## 📂 Project Structure
+
+* **`/app`**: Contains all screens and routing logic (Expo Router).
+* **`/src/components`**: Reusable UI components (Cards, Headers, Modals).
+* **`/src/redux`**: State management logic (`gameSlice.js`).
+* **`/src/logic`**: Core game algorithms, Sound manager, and Firebase helpers.
+* **`/src/constants`**: Theme colors (`Colors.js`) and configuration.
+
+
+## 🤝 Contributing
+
+Contributions are welcome!
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
+
+---
+
+## 📝 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+
+**Built with ❤️ by Saurabh Chowrasia**
