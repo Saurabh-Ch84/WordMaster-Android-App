@@ -1,0 +1,2 @@
+export const STORAGE_KEY = 'WORD_MASTER_DICT_V1';
+export const USER_KEY = 'WORD_MASTER_USER_V1';
