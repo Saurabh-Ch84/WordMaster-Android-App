@@ -1,6 +1,6 @@
 import { signInAnonymously } from "firebase/auth";
 import { ref, update, onValue, query, orderByChild, limitToLast } from "firebase/database";
-import { auth, db } from "../config/firebaseConfig";
+import { db,auth } from "../config/firebaseConfig";
 
 // 1. Silent Login (with error handling)
 export const loginUserSilently = async () => {
